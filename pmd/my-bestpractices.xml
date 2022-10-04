@@ -9,30 +9,30 @@
 Rules which enforce generally accepted best practices.
     </description>
 
-    <rule name="AbstractClassWithoutAbstractMethod"
-          language="java"
-          since="3.0"
-          message="This abstract class does not have any abstract methods"
-          class="net.sourceforge.pmd.lang.java.rule.bestpractices.AbstractClassWithoutAbstractMethodRule"
-          externalInfoUrl="${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#abstractclasswithoutabstractmethod">
-        <description>
-The abstract class does not contain any abstract methods. An abstract class suggests
-an incomplete implementation, which is to be completed by subclasses implementing the
-abstract methods. If the class is intended to be used as a base class only (not to be instantiated
-directly) a protected constructor can be provided to prevent direct instantiation.
-        </description>
-        <priority>3</priority>
-        <example>
-<![CDATA[
-public abstract class Foo {
-  void int method1() { ... }
-  void int method2() { ... }
-  // consider using abstract methods or removing
-  // the abstract modifier and adding protected constructors
-}
-]]>
-        </example>
-    </rule>
+<!--    <rule name="AbstractClassWithoutAbstractMethod"-->
+<!--          language="java"-->
+<!--          since="3.0"-->
+<!--          message="This abstract class does not have any abstract methods"-->
+<!--          class="net.sourceforge.pmd.lang.java.rule.bestpractices.AbstractClassWithoutAbstractMethodRule"-->
+<!--          externalInfoUrl="${pmd.website.baseurl}/pmd_rules_java_bestpractices.html#abstractclasswithoutabstractmethod">-->
+<!--        <description>-->
+<!--The abstract class does not contain any abstract methods. An abstract class suggests-->
+<!--an incomplete implementation, which is to be completed by subclasses implementing the-->
+<!--abstract methods. If the class is intended to be used as a base class only (not to be instantiated-->
+<!--directly) a protected constructor can be provided to prevent direct instantiation.-->
+<!--        </description>-->
+<!--        <priority>3</priority>-->
+<!--        <example>-->
+<!--<![CDATA[-->
+<!--public abstract class Foo {-->
+<!--  void int method1() { ... }-->
+<!--  void int method2() { ... }-->
+<!--  // consider using abstract methods or removing-->
+<!--  // the abstract modifier and adding protected constructors-->
+<!--}-->
+<!--]]>-->
+<!--        </example>-->
+<!--    </rule>-->
 
     <rule name="AccessorClassGeneration"
           language="java"
